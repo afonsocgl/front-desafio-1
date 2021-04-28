@@ -1,6 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
+    font-family: 'Open', sans-serif;
 }
 
 .cabecalho{
@@ -27,7 +28,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Open', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -47,15 +47,63 @@ body{
     font-size: 24px;
 }
 
-.noticias div{
+.post{
     width: 730px;
-    height: 696px;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    
+}
+
+.button-container{
+    padding: 0 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.noticias div:first-child{
+    margin-top: 0;
+}
+
+.noticias h1{
+    font-size: 24px;
+    color: #000000;
+    padding: 0;
+    margin: 24px;
 }
 
 .noticias .info{
+    font-size: 12px;
+    color: #929292;
+    padding: 0;
+    margin: 0 24px 24px 24px;
+}
+
+.noticias p{
+    font-size: 14px;
+    color: #545454;
+    padding: 24px;
+}
+
+
+
+
+
+.noticias button{
+    
+    border: 1px solid #FE0078;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 154px;
+    height: 43px;
+    font-size: 14px;
+    line-height: 19px;
+    background: #FFFFFF;
+    align-self: flex-end;
+    margin-top: auto;
     
 }
 
