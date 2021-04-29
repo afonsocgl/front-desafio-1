@@ -159,6 +159,29 @@ a{
     color: #545454;
 }
 
+.propaganda div{
+    width: 340px;
+    height: 240px;
+    background: #EEEEEE;
+    font-size: 36px;
+    color: #545454;
+    margin-top: 32px;
+
+}
+
+.propaganda div:first-child{
+    margin-top: 0;
+}
+
+.propaganda .banner{
+    margin-top: 41px;
+}
+
+.banner div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .rodape{
 
