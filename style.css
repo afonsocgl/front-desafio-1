@@ -122,7 +122,7 @@ nav{
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
-
+    align-self: flex-start;
 }
 
 nav input{
@@ -136,6 +136,7 @@ nav input{
 
 nav input:hover, nav input:focus{
     border: 1px solid #FE0078;
+    outline: none;
 }
 
 .categoria h1, .propaganda h1{
@@ -157,35 +158,40 @@ nav input:hover, nav input:focus{
     border-bottom: 2px dashed #EEEEEE;
     background: #FFFFFF;
     margin-top: 16px;
-
+    color: #545454;
 }
 
 .categoria ul li:first-child{
     margin-top: 0;
 }
 
-a{
+.categoria a{
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    
 }
 
 .categoria li:hover{
     border-bottom: 2px dashed  rgba(254, 0, 120, 1);
+    color: #FE0078;
 }
 
 
 .categoria span{
     font-size: 14px;
-    color: #545454;
+    
 }
 
-.propaganda div{
+.banner div{
     width: 340px;
     height: 240px;
     background: #EEEEEE;
     font-size: 36px;
     color: #545454;
     margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -197,11 +203,6 @@ a{
     margin-top: 41px;
 }
 
-.banner div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 footer div{
     width: 100vw;
