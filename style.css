@@ -82,17 +82,13 @@ body{
     margin: 0 24px 24px 24px;
 }
 
-.noticias p{
+article p{
     font-size: 14px;
     color: #545454;
     padding: 24px;
 }
 
-
-
-
-
-.noticias button{
+.noticias article button{
     
     border: 1px solid #FE0078;
     box-sizing: border-box;
@@ -107,15 +103,62 @@ body{
     
 }
 
-.menu-lateral-direito{
+nav{
     width: 380px;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 
 }
+
+nav input{
+    width: 340px;
+    height: 52px;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 17px 20px;
+}
+
+.categoria h1, .propaganda h1{
+    border-left: 2px solid #FE0078;
+    font-size: 18px;
+    color: #000000;
+    margin: 25px 0 40px 0;
+    padding: 9px 0 9px 11px;
+
+}
+
+.categoria ul{
+    padding: 0;
+}
+.categoria ul li{
+    list-style-type: none;
+    width: 340px;
+    height: 35px;
+    border-bottom: 2px dashed #EEEEEE;
+    background: #FFFFFF;
+    margin-top: 16px;
+
+}
+
+.categoria ul li:first-child{
+    margin-top: 0;
+}
+
+a{
+    display: flex;
+    justify-content: space-between
+}
+
+.categoria span{
+    font-size: 14px;
+    color: #545454;
+}
+
 
 .rodape{
 
