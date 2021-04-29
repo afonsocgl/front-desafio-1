@@ -2,6 +2,9 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Open', sans-serif;
+    margin: 0;
+    width: 100vw;
+    background: #F5F5F5;
 }
 
 .cabecalho{
@@ -12,6 +15,7 @@ body{
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .cabecalho svg{
@@ -97,10 +101,16 @@ article p{
     height: 43px;
     font-size: 14px;
     line-height: 19px;
+    color: #545454;
     background: #FFFFFF;
     align-self: flex-end;
     margin-top: auto;
     
+}
+
+.noticias article button:hover{
+    background:  #FE0078;
+    color:  #FFFFFF
 }
 
 nav{
@@ -111,6 +121,7 @@ nav{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    box-sizing: border-box;
 
 }
 
@@ -121,6 +132,10 @@ nav input{
     box-sizing: border-box;
     border-radius: 10px;
     padding: 17px 20px;
+}
+
+nav input:hover, nav input:focus{
+    border: 1px solid #FE0078;
 }
 
 .categoria h1, .propaganda h1{
@@ -154,6 +169,11 @@ a{
     justify-content: space-between
 }
 
+.categoria li:hover{
+    border-bottom: 2px dashed  rgba(254, 0, 120, 1);
+}
+
+
 .categoria span{
     font-size: 14px;
     color: #545454;
@@ -183,6 +203,13 @@ a{
     align-items: center;
 }
 
-.rodape{
-
+footer div{
+    width: 100vw;
+    height: 70px;
+    background: #222222;
+    color: #FFFFFF;
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
