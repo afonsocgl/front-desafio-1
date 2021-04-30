@@ -24,7 +24,8 @@ body{
    
 }
 
-.cabecalho div{
+.cabecalho div ul{
+    list-style-type: none;
     margin-left: auto;
     margin-right: 169px;
     width: 223px;
@@ -38,6 +39,7 @@ body{
     color: #545454
 
 }
+
 
 .noticias{
     display: flex;
@@ -89,10 +91,16 @@ body{
 article p{
     font-size: 14px;
     color: #545454;
-    padding: 24px;
+    
 }
 
-.noticias article button{
+article div>ul{
+    font-size: 14px;
+    color: #545454;
+
+  }
+
+.noticias article .post button{
     
     border: 1px solid #FE0078;
     box-sizing: border-box;
@@ -108,7 +116,7 @@ article p{
     
 }
 
-.noticias article button:hover{
+.noticias article .post button:hover{
     background:  #FE0078;
     color:  #FFFFFF
 }
@@ -151,6 +159,7 @@ nav input:hover, nav input:focus{
 .categoria ul{
     padding: 0;
 }
+
 .categoria ul li{
     list-style-type: none;
     width: 340px;
@@ -213,4 +222,73 @@ footer div{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* -------------Após Continuar Lendo ---------------*/
+
+
+.comentarios{
+    display: flex;
+    flex-direction: column;
+}
+
+.comentarios .dados{
+    display: flex;
+    justify-content: space-between;
+}
+
+.comentarios .dados .nome, .comentarios .dados .email{
+    display: flex;
+    flex-direction: column;
+}
+
+.comentarios input{
+    width: 340px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.comentarios input:hover, .comentarios input:focus, .comentarios textarea:hover, .comentarios textarea:focus{
+    border: 1px solid #FE0078;
+    outline: none;
+}
+
+.comentarios textarea{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.comentarios label{
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+.comentarios h1{
+    margin: 56px 0 0 0;
+    font-size: 24px;
+}
+
+.comentarios button{
+    margin-top: 48px;
+    border: 1px solid #FE0078;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 154px;
+    height: 43px;
+    font-size: 14px;
+    background:  #FE0078;
+    color:  #FFFFFF;
+    align-self: flex-end;
+    
+}
+
+.comentarios button:hover{
+    
+    color: #545454;
+    background: #FFFFFF;
 }
