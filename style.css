@@ -11,6 +11,7 @@ body{
     background: #F5F5F5;
 }
 
+/* ---------------- HEADER--------------- */
 .cabecalho{
     display: flex;
     width: 100vw;
@@ -29,7 +30,7 @@ body{
      
 }
 
-
+/* ------------Lista do Header------------ */
 
 .cabecalho div ul{
     list-style-type: none;
@@ -58,6 +59,9 @@ body{
     
 }
 
+
+/* --------  ÁREA CENTRAL ---------- */
+
 .noticias{
     width: 1160px;
     display: flex;
@@ -71,8 +75,6 @@ body{
     flex-direction: column;
     font-size: 24px;
 }
-
-
 
 .post{
     width: 730px;
@@ -143,6 +145,8 @@ article div>ul{
     cursor: pointer;
 }
 
+
+/*  --------------MENU LATERAL---------------- */
 nav{
     width: 380px;
     background: #FFFFFF;
@@ -169,7 +173,6 @@ nav input:hover, nav input:focus{
     outline: none;
     cursor: pointer;
 }
-
 
 .categoria h1, .propaganda h1{
     border-left: 2px solid #FE0078;
@@ -210,11 +213,12 @@ nav input:hover, nav input:focus{
     cursor: pointer;
 }
 
-
 .categoria span{
     font-size: 14px;
     
 }
+
+/* ---------- PUBLICIDADE----------- */
 
 .banner div{
     width: 340px;
@@ -321,7 +325,7 @@ footer div{
 }
 
 
-/* ----------PÁGINA PARA ENTRAR EM CONTATO------------ */
+/* ------------ PÁGINA CONTATO------------ */
 
 
 .container-contatos{
