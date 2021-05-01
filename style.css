@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -18,16 +22,17 @@ body{
     box-sizing: border-box;
 }
 
-.cabecalho svg{
-    margin-right: auto;
-    margin-left: 140.69px;
-   
+.centro{
+    width: 1160px;
+    display: flex;
+    justify-content: space-between; 
+     
 }
+
+
 
 .cabecalho div ul{
     list-style-type: none;
-    margin-left: auto;
-    margin-right: 169px;
     width: 223px;
     height: 19px;
     display: flex;
@@ -36,7 +41,8 @@ body{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    color: #545454
+    color: #545454;
+    
 
 }
 
@@ -48,13 +54,16 @@ body{
 .cabecalho ul a:hover{
     text-decoration: none;
     color:  #FE0078;
+    cursor: pointer;
     
 }
 
 .noticias{
+    width: 1160px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 56px;
+    align-self: center;
 }
 
 .noticias article{
@@ -130,7 +139,8 @@ article div>ul{
 
 .noticias article .post button:hover{
     background:  #FE0078;
-    color:  #FFFFFF
+    color:  #FFFFFF;
+    cursor: pointer;
 }
 
 nav{
@@ -157,7 +167,9 @@ nav input{
 nav input:hover, nav input:focus{
     border: 1px solid #FE0078;
     outline: none;
+    cursor: pointer;
 }
+
 
 .categoria h1, .propaganda h1{
     border-left: 2px solid #FE0078;
@@ -195,6 +207,7 @@ nav input:hover, nav input:focus{
 .categoria li:hover{
     border-bottom: 2px dashed  rgba(254, 0, 120, 1);
     color: #FE0078;
+    cursor: pointer;
 }
 
 
@@ -266,6 +279,7 @@ footer div{
 .comentarios input:hover, .comentarios input:focus, .comentarios textarea:hover, .comentarios textarea:focus{
     border: 1px solid #FE0078;
     outline: none;
+    cursor: pointer;
 }
 
 .comentarios textarea{
@@ -273,6 +287,7 @@ footer div{
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     border-radius: 2px;
+    resize: none;
 }
 
 .comentarios label{
@@ -299,23 +314,26 @@ footer div{
     
 }
 
-.comentarios button:hover{
-    
+.comentarios button:hover{    
     color: #545454;
     background: #FFFFFF;
+    cursor: pointer;
 }
 
 
 /* ----------PÁGINA PARA ENTRAR EM CONTATO------------ */
 
-.conatiner-contatos{
+
+.container-contatos{
+    width: 1160px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-self: center;
     margin-top: 56px;
     
 }
 
-.conatiner-contatos article{
+.container-contatos article{
     width: 730px;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
@@ -342,6 +360,7 @@ footer div{
 
 .contato h1{
     font-size: 24px;
+    margin-top: 0;
 }
 .contato h2{
     margin-top: 32px;
